@@ -14,6 +14,6 @@ public class AttackCalculator
     // Метод для вычисления среднего показателя силы атаки
     public double CalculateAverageAttack(Character character)
     {
-        return AverageAttackCalculation(new List<int> { character.AttackPower });
+        return AverageAttackCalculation(new List <int> { character.AttackPower });
     }
 }

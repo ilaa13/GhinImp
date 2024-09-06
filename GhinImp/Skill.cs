@@ -6,14 +6,14 @@ public class Skill
     public string SkillName;
     public int Damage;
     
-    public Skill()
+    public Skill(string skill, int damage)
     {
-        SkillName = "Unnamed Skill";
-        Damage = 0;
+        this.SkillName = skill;
+        this.Damage = damage;
     }
 
     // Метод для расчета урона навыка
-    public void CalculateSkillDamage()
+    public int CalculateSkillDamage()
     {
         return Damage * 2;
     }

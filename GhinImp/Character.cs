@@ -6,10 +6,11 @@ public record Character
 {
     public string Name { get; init; }
     public string Element { get; }
-    public int AttackPower { init; }
-    public List<Skill> Skills;
+    public int AttackPower { init; get; }
+    
+    public List <Skill> Skills;
 
-    public Character(string name, string element, int attackPower, List<Skill> skills)
+    public Character(string name, string element, int attackPower, List <Skill> skills)
     {
         Name = name;
         Element = element;
@@ -18,7 +19,7 @@ public record Character
     }
 
     // Метод для проверки силы атаки
-    public void IsPowerful()
+    public bool IsPowerful()
     {
         return AttackPower > 80;
     }
